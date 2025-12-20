@@ -6,6 +6,7 @@ This project is created as part of the Web Development Internship at Prodigy Inf
 ## Description
 A modern and responsive website developed using HTML, CSS, and JavaScript.  
 The project focuses on clean UI design, smooth scrolling, hover effects, and user interaction.
+🔗 Live Demo: https://sabirshaikh712.github.io/PRODIGY_WD_01/
 
 ## Technologies Used
 - HTML

@@ -17,9 +17,15 @@ document.addEventListener("DOMContentLoaded", () => {
   const navbar = document.querySelector(".navbar");
   const navLinks = document.querySelectorAll(".nav-links a");
   const sections = document.querySelectorAll("section[id]");
+  const menuToggle = document.getElementById("menu-toggle");
+  const navMenu = document.getElementById("nav-links");
 
   window.addEventListener("scroll", () => {
     navbar.classList.toggle("scrolled", window.scrollY > 50);
+  });
+
+  menuToggle.addEventListener("click", () => {
+    navMenu.classList.toggle("active");
   });
 
   navLinks.forEach(link => {
@@ -32,6 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
           behavior: "smooth"
         });
       }
+      navMenu.classList.remove("active");
     });
 
     link.addEventListener("mouseenter", () => {
